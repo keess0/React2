@@ -1,0 +1,174 @@
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+}
+
+.div_App {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-bar input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.note {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+.note h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.note button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.note button:hover {
+  background-color: #c82333;
+}
+
+.note-editor {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; 
+  padding: 20px;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+.note-editor input,
+.note-editor textarea {
+  width: calc(100% - 30px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.note.editing input {
+  width: 100%;
+}
+.note-editor button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.note-editor button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; /* Ajustar el relleno para pantallas mas pequeñas */
+  }
+
+  .note {
+    width: calc(100% - 20px); /* Reducir el ancho de las notas en pantallas mas pequeñas */
+  }
+  
+  .note-editor {
+    width: calc(100% - 20px); /* Reducir el ancho del editor en pantallas mas pequeñas */
+  }
+}
